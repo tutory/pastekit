@@ -1,0 +1,29 @@
+{
+  "name": "pastekit",
+  "version": "1.0.0",
+  "description": "Tiny, dependency-free helpers to normalize clipboard paste events across browsers (text, HTML, SVG, and image files).",
+  "type": "module",
+  "main": "pastekit.js",
+  "files": [
+    "pastekit.js"
+  ],
+  "scripts": {
+    "test": "mocha --import 'test/setup-jsdom.mjs'"
+  },
+  "keywords": [
+    "clipboard",
+    "paste",
+    "svg",
+    "browser",
+    "html",
+    "cross-browser",
+    "file"
+  ],
+  "author": "Stephan Hoyer <ste.hoyer@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "6.2.0",
+    "jsdom": "27.1.0",
+    "mocha": "11.7.4"
+  }
+}
