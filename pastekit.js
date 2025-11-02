@@ -16,7 +16,11 @@ export async function getPastedData(evt) {
   // Chromium path (items + getAsString)
   const items = Array.from(dt.items || [])
   const canUseItems =
-    items.length && typeof (items[0]?.getAsString === 'function' || typeof items[0]?.getAsFile === 'function')
+    items.length &&
+    typeof (
+      items[0]?.getAsString === 'function' ||
+      typeof items[0]?.getAsFile === 'function'
+    )
   if (canUseItems) {
     const { files, text, html } = await extractFromItems(items)
     if (files.length || text || html) return { files, text, html }
@@ -62,12 +66,12 @@ async function extractFromItems(items) {
     }
 
     // Text items
-    if (item.type === 'text/html' || item.type === 'text/plain') {
+    const type = item.type
+    if (type === 'text/html' || type === 'text/plain') {
       textPromises.push(
-        new Promise((resolve) => item.getAsString?.(resolve)).then((str) => ({
-          type: item.type,
-          str,
-        }))
+        new Promise((resolve) =>
+          item.getAsString?.((str) => resolve({ type, str }))
+        )
       )
     }
   }

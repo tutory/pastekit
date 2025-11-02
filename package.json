@@ -8,7 +8,7 @@
     "pastekit.js"
   ],
   "scripts": {
-    "test": "mocha --import 'test/setup-jsdom.mjs'"
+    "test": "mocha"
   },
   "keywords": [
     "clipboard",
