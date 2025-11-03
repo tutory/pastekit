@@ -5,8 +5,22 @@
   "type": "module",
   "main": "pastekit.js",
   "files": [
-    "pastekit.js"
+    "pastekit.js",
+    "README.md",
+    "LICENSE"
   ],
+  "exports": {
+    ".": "./pastekit.js"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutory/pastekit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tutory/pastekit/issues"
+  },
+  "homepage": "https://github.com/tutory/pastekit#readme",
   "scripts": {
     "test": "mocha"
   },
@@ -19,7 +33,10 @@
     "cross-browser",
     "file"
   ],
-  "author": "Stephan Hoyer <ste.hoyer@gmail.com>",
+  "author": [
+    "ChatGPT (openai.com)",
+    "Stephan Hoyer <ste.hoyer@gmail.com>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "chai": "6.2.0",

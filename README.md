@@ -4,6 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/pastekit.svg)](https://www.npmjs.com/package/pastekit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![CI](https://github.com/tutory/pastekit/actions/workflows/ci.yaml/badge.svg)](https://github.com/tutory/pastekit/actions/workflows/ci.yaml)
 
 ---
 
@@ -97,7 +98,7 @@ Mocha + Chai tests cover:
 
 ## 📄 License
 
-MIT © ChatGPT (OpenAI)
+MIT © ChatGPT (OpenAI) & Stephan Hoyer
 
 ---
 
