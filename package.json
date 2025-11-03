@@ -1,6 +1,6 @@
 {
   "name": "pastekit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny, dependency-free helpers to normalize clipboard paste events across browsers (text, HTML, SVG, and image files).",
   "type": "module",
   "main": "pastekit.js",
